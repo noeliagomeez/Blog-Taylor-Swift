@@ -1,0 +1,164 @@
+html {
+    background-color: #AC9EB8;
+    font-family: 'Nunito Sans', sans-serif;
+    }
+ 
+ body {
+     background-color: #AC9EB8;
+     }
+ 
+ .contenedor-logo {
+     background-color: #0F1D28;
+ }
+ 
+ .foto-banner{
+     display: flex;
+     justify-content: center;
+ }
+
+ #menu a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black
+    }
+
+#menu a:hover {
+    color: #fcd0cf;
+}
+
+.carousel-inner {
+    width: 800px;
+    margin-left: 24%;
+    margin-top: 3%;
+}
+ 
+.texto-discografia {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    left: 18%;
+    filter: invert(100%)
+}
+
+.carousel-control-next {
+    position: absolute;
+    right: 19.5%;
+    filter: invert(100%)
+}
+
+  
+#texto-discografia {
+    color: black;
+}
+
+.derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-tay {
+    text-decoration: none;
+    color: inherit;
+    color: #FF0077
+}
+
+.twitter-tay {
+    text-decoration: none;
+    color: inherit;
+    color: #249EF1
+}
+
+.tiktok-tay {
+    text-decoration: none;
+    color: inherit;
+    color: black;
+}
+
+.lista-redes {
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#fotos-galeria {
+    width: 400px;
+}
+
+.contenedor-todas-galeria {
+    margin-left: 10%;
+}
+
+.contenedor-galeria-2 {
+    margin-top: 0.4%;
+}
+
+.img-thumbnail {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;   
+}
+
+#icon-twitter {
+    width: 40px;
+}
+
+#icon-instagram {
+    margin-left: 5px;
+}
+
+#icon-tiktok {
+    margin-left: 4px;
+}
+
+.tiktok-tay {
+    font-weight: bold;
+}
+
+.twitter-tay {
+    font-weight: bold;
+}
+
+.instagram-tay {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width:500px) {
+    .carousel-inner {
+        width: 200px;
+    }
+    .carousel-control-prev {
+        position: absolute;
+        left: 20.5%;
+        filter: invert(100%)
+    }
+
+    .carousel-control-next {
+        position:absolute;
+        right: 19.5%;
+        filter: invert(100%)
+    }
+
+    .contenedor-todas-galeria {
+        margin-right: 10%;
+    } 
+     
+    #fotos-galeria {
+        margin: 1%;
+    }
+
+    #menu a:hover {
+        color: #fcd0cf;
+    }
+
+}
