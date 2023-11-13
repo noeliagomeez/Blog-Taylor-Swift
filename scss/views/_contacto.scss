@@ -1,0 +1,80 @@
+.contenedor-encuesta {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    width: 600px;
+    margin-left: 30%;
+
+    .columnas {
+        margin: 1%;
+    }
+
+    .sugerencias {
+    color: $color-principal;
+    font-weight: bold;
+    margin-left: 6px;
+    }
+
+    .textarea {
+        resize: none;
+    }
+
+    
+}
+
+.titulo-contacto {
+    @include flex-center;
+    color: $color-principal;
+    text-decoration:underline;
+
+}
+
+.texto-contacto {
+    @include flex-center;
+    color: $color-principal;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+
+.derechos {
+    @include flex-center;
+    align-items: center;
+    color: $color-fuente-2;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #imagen-logo {
+        display: flex;
+        margin: 0;
+    
+    }
+    .contenedor-logo {
+        height: 96px;
+    }
+    #contenedor-menu-hamburguesa {
+        margin-left: 72px;
+    }
+
+    #menu {
+        margin: 0;
+    }
+
+    #navbarNav {
+        background-color: $color-principal;
+    }
+
+    .contenedor-encuesta {
+        width: 250px;
+        margin: 0;
+        margin-left: 60px;
+    }
+
+    .titulo-contacto {
+        margin-top:30px;
+    }
+}
+

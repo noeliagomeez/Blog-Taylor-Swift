@@ -1,0 +1,67 @@
+.contenedor-logo {
+    background-color: $color-principal;
+}
+
+#imagen-logo {
+    display: flex;
+    margin-left: 135px;
+}
+
+#fotos-galeria {
+    width: 400px;
+}
+
+.contenedor-todas-galeria {
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+.contenedor-galeria-2 {
+    margin-top: 0.4%;
+}
+
+.derechos {
+    @include flex-center;
+    align-items: center;
+    color: $color-fuente-2;
+}
+
+
+/*Media Query Galeria*/
+@media only screen and (max-width: 500px) {
+    #imagen-logo {
+        display: flex;
+        margin: 0;
+    
+    }
+    .contenedor-logo {
+        height: 96px;
+    }
+    #contenedor-menu-hamburguesa {
+        margin-left: 72px;
+    }
+
+    #menu {
+        margin: 0;
+    }
+
+    #navbarNav {
+        background-color: $color-principal;
+    }
+
+    .contenedor-todas-galeria {
+        margin-right: 10%;
+    } 
+     
+    #fotos-galeria {
+        margin: 1%;
+    }
+
+    .contenedor-galeria-1 {
+        gap: 10px;
+    }
+
+    .contenedor-galeria-2 {
+        gap:5px;
+    }
+}

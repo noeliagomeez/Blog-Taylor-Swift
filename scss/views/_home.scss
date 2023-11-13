@@ -1,0 +1,188 @@
+.contenedor-logo {
+    background-color: $color-principal;
+}
+
+#imagen-logo {
+    display: flex;
+    margin-left: 135px;
+}
+
+
+
+.foto-banner{
+    @include flex-center;
+    margin-top: 1rem;
+}
+
+.nav-item {
+    color: inherit;
+    text-decoration: none;
+    color: black;
+    margin: 4px;
+    font-size: 18px;
+    font-weight: bold;
+     
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: 20px;
+}
+
+#menu a:hover {
+    color: $color-hover
+}
+
+
+#menu {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    margin-left: 200px;
+    top: 35px;
+}
+
+#contenedor-menu-hamburguesa {
+    margin-left: 5px;
+}
+
+.nav-link {
+    color: $color-fuente-1
+}
+
+.texto-discografia {
+    @include flex-center;
+    margin-top: 35px;
+    font-weight: bold;
+    color: $color-principal;
+    text-decoration: underline;
+}
+
+.imagenes-celular {
+    display: none;
+}
+
+.carousel-inner {
+    width: 600px;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    left: 24%;
+    filter: invert(100%)
+}
+
+.carousel-control-next {
+    position: absolute;
+    right: 27%;
+    filter: invert(100%)
+}
+
+.carousel-indicators {
+    right: 50px;
+}
+
+.lista-redes {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 20px;
+    list-style: none;
+    flex-direction: column;
+
+    #icon-instagram {
+        margin-left: 5px;
+    }
+
+    .img-thumbnail {
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        height: 30px;   
+    }
+
+    .instagram-tay {
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+        color: #FF0077
+    }
+
+    #icon-twitter {
+        width: 40px;
+    }
+
+    .twitter-tay {
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+        color: #249EF1
+    }
+
+    #icon-tiktok {
+        margin-left: 4px;
+    }
+
+    .tiktok-tay {
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+        color: black;
+    }
+
+}
+
+
+.derechos {
+    @include flex-center;
+    align-items: center;
+    color: $color-fuente-2;
+}
+
+@media only screen and (max-width: 500px) {
+    #imagen-logo {
+        display: flex;
+        margin: 0;
+    
+    }
+    .contenedor-logo {
+        height: 96px;
+    }
+    #contenedor-menu-hamburguesa {
+        margin-left: 72px;
+    }
+
+    #menu {
+        margin: 0;
+    }
+
+    #navbarNav {
+        background-color: $color-principal;
+    }
+
+    #carouselExampleCaptions {
+        display: none;
+    }
+
+    .imagenes-celular {
+        display:block;
+    }
+
+    #discografia-mobile {
+        width: 170px;
+    }
+
+    .contenedor-mobile-1 {
+        @include flex-center;
+        gap: 5px;
+    }
+
+    .contenedor-mobile-2 {
+        @include flex-center;
+        margin-top: 5px;
+        gap: 5px;
+    }
+}
+
+

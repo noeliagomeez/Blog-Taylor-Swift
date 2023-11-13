@@ -1,0 +1,108 @@
+#imagen-erastour {
+    display: flex;
+    margin-left: 430px;
+    margin-bottom: 1%;
+    width: 700px;
+}
+
+.texto-eras {
+    display: flex;
+    margin-left: 10px;
+    color: $color-principal;
+    font-weight: bold;
+    
+}
+
+.titulo-eras {
+    @include flex-center;
+    color: $color-principal;
+    text-decoration: underline;
+    
+}
+
+.texto-taylor-argentina {
+    @include flex-center;
+    color: $color-principal;
+    text-decoration:underline;
+}
+
+.texto-taylor-buenos-aires {
+    justify-content: center;
+    color: $color-principal;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.contenedor-taylor-argentina {
+    justify-content: center;
+}
+
+.contenedor-imagen-1 {
+    @include flex-center;
+    gap: 5px;
+}
+
+.contenedor-imagen-2 {
+    @include flex-center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.contenedor-imagen-3 {
+    @include flex-center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.derechos {
+    @include flex-center;
+    align-items: center;
+    color: $color-fuente-2;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #imagen-logo {
+        display: flex;
+        margin: 0;
+    
+    }
+    .contenedor-logo {
+        height: 96px;
+    }
+    #contenedor-menu-hamburguesa {
+        margin-left: 72px;
+    }
+
+    #menu {
+        margin: 0;
+    }
+
+    #navbarNav {
+        background-color: $color-principal;
+    }
+
+    #imagen-erastour {
+        margin: 0;
+        width: 300px;
+        margin-left: 45px;
+    }
+
+    .texto-eras {
+        margin-top: 10px;
+    }
+
+    .contenedor-imagen-1 {
+        display: inline-block;
+
+    }
+
+    .contenedor-imagen-2 {
+        display: inline-block;
+    }
+
+    .contenedor-imagen-3 {
+        display: inline-block;
+        }
+}
