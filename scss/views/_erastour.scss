@@ -1,12 +1,18 @@
-#imagen-erastour {
+
+.contenedor-eras {
     display: flex;
-    margin-left: 430px;
+    justify-content: center;
+}
+
+#imagen-erastour {
     margin-bottom: 1%;
     width: 700px;
+    margin-top: 15px;
 }
 
 .texto-eras {
     display: flex;
+    text-align: center;
     margin-left: 10px;
     color: $color-principal;
     font-weight: bold;
@@ -17,6 +23,8 @@
     @include flex-center;
     color: $color-principal;
     text-decoration: underline;
+    margin-top: 10px;
+    
     
 }
 
@@ -24,6 +32,8 @@
     @include flex-center;
     color: $color-principal;
     text-decoration:underline;
+    text-align: center;
+    
 }
 
 .texto-taylor-buenos-aires {
@@ -31,6 +41,7 @@
     color: $color-principal;
     font-weight: bold;
     margin-left: 10px;
+    text-align: center;
 
 }
 
@@ -63,6 +74,12 @@
 
 
 @media only screen and (max-width: 500px) {
+    
+    .contenedor-eras {
+        display: flex;
+        justify-content: center;
+    }
+    
     #imagen-logo {
         display: flex;
         margin: 0;
@@ -84,13 +101,23 @@
     }
 
     #imagen-erastour {
-        margin: 0;
         width: 300px;
-        margin-left: 45px;
     }
 
     .texto-eras {
         margin-top: 10px;
+    }
+
+    #imagen-1-eras {
+    margin-bottom: 5px;
+    }
+
+    #imagen-3-eras {
+        margin-bottom: 5px;
+    }
+
+    #imagen-5-eras {
+        margin-bottom: 5px;
     }
 
     .contenedor-imagen-1 {
@@ -105,4 +132,91 @@
     .contenedor-imagen-3 {
         display: inline-block;
         }
+
+        .contenedor-taylor-argentina {
+            margin: 10px;
+        }
+
+        .titulo-eras {
+            @include flex-center
+        }
+
+        .texto-taylor-argentina {
+            @include flex-center
+        }
+
+        .texto-taylor-buenos-aires {
+            @include flex-center
+        }
+
+        .texto-eras {
+            @include flex-center
+        }
+
+        .derechos {
+            @include flex-center;
+        }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .contenedor-eras {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #imagen-erastour {
+        width: 400px;
+    }
+
+    .texto-eras {
+        @include flex-center;
+        text-align: center;
+    }
+
+    .texto-taylor-buenos-aires {
+        @include flex-center;
+        text-align: center;
+    }
+
+    .texto-taylor-buenos-aires {
+        @include flex-center;
+        text-align: center;
+    }
+
+    #imagen-1-eras {
+        margin-bottom: 5px;
+        }
+    
+        #imagen-3-eras {
+            
+            margin-bottom: 5px;
+        }
+    
+        #imagen-5-eras {
+            
+            margin-bottom: 5px;
+        }
+    
+        .contenedor-imagen-1 {
+            display: inline-block;
+            text-align: center;
+            
+        }
+    
+        .contenedor-imagen-2 {
+            display: inline-block;
+            text-align: center;
+        }
+    
+        .contenedor-imagen-3 {
+            display: inline-block;
+            text-align: center;
+            }
+
+            .contenedor-taylor-argentina {
+                margin: 10px;
+            }
+
+
 }

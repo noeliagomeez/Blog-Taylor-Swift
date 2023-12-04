@@ -1,12 +1,13 @@
+
+
 .contenedor-logo {
     background-color: $color-principal;
 }
 
 #imagen-logo {
     display: flex;
-    margin-left: 135px;
+    margin: 0;
 }
-
 
 
 .foto-banner{
@@ -58,31 +59,24 @@
     text-decoration: underline;
 }
 
+#carouselExampleSlidesOnly {
+    display: flex;
+    width: 95vw;
+    height:95vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .imagenes-celular {
     display: none;
 }
 
 .carousel-inner {
     width: 600px;
-    margin-left: 30%;
-    margin-top: 3%;
+    justify-content: center;
 }
 
-.carousel-control-prev {
-    position: absolute;
-    left: 24%;
-    filter: invert(100%)
-}
-
-.carousel-control-next {
-    position: absolute;
-    right: 27%;
-    filter: invert(100%)
-}
-
-.carousel-indicators {
-    right: 50px;
-}
 
 .lista-redes {
     display: flex;
@@ -106,7 +100,8 @@
         font-weight: bold;
         text-decoration: none;
         color: inherit;
-        color: #FF0077
+        color: #FF0077;
+        margin-left: 5px;
     }
 
     #icon-twitter {
@@ -117,7 +112,8 @@
         font-weight: bold;
         text-decoration: none;
         color: inherit;
-        color: #249EF1
+        color: black;
+        margin-right: 3px;
     }
 
     #icon-tiktok {
@@ -129,6 +125,7 @@
         text-decoration: none;
         color: inherit;
         color: black;
+        margin-left: 5px
     }
 
 }
@@ -138,6 +135,7 @@
     @include flex-center;
     align-items: center;
     color: $color-fuente-2;
+    margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -161,7 +159,15 @@
         background-color: $color-principal;
     }
 
-    #carouselExampleCaptions {
+    .texto-discografia {
+        @include flex-center;
+    }
+
+    #carouselExampleSlidesOnly {
+        display: none;
+    }
+
+    .carousel-inner {
         display: none;
     }
 
@@ -183,6 +189,46 @@
         margin-top: 5px;
         gap: 5px;
     }
+
+    .derechos {
+        @include flex-center;
+    }
 }
 
+/*Tablet*/
 
+@media only screen and (max-width: 960px) {
+    
+    
+    
+    #navbarNav {
+        background-color: $color-principal;
+    }
+
+    #menu {
+        display: flex;
+        list-style-type: none;
+        position: absolute;
+        margin-left: 75px;
+        top: 35px;
+    }
+    
+    #contenedor-menu-hamburguesa {
+        margin-left: 5px;
+    }
+
+    #carouselExampleSlidesOnly {
+        width: 100vw;
+        height:65vh;
+        
+        
+    }
+
+    .carousel-inner {
+        width: 350px;
+        justify-content: center;
+    }
+
+    
+    
+}
